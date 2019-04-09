@@ -2,6 +2,18 @@
 
 Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
 
+# Setup
+
+## Using `virtualenv`
+
+1. Make sure you have [Python 3] and [virtualenv] installed
+2. Clone this repository: `git clone https://github.com/CoderVlogger/devhub.git`
+3. Move into the project folder: `cd devhub`
+4. Create a new virtualenv: `virtualenv venv -p python3`
+5. Activate the virtualenv: `source ./venv/bin/activate`
+6. Install dependencies: `pip install -r requirements.txt`
+
+
 # Project Structure
 
 ## Repository structure
@@ -19,3 +31,6 @@ Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
    1. Share public posts
    2. Post rating system
    3. Post comments
+
+[Python 3]: https://www.python.org/downloads/
+[virtualenv]: https://virtualenv.pypa.io/en/stable/
