@@ -1,6 +1,10 @@
-# DEVHUB
+# DevHub
 
 Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
+
+## Related [YouTube](http://youtube.com/CoderVlogger "CoderVlogger's YouTube channel") videos
+
+1. [Introduction & Custom User Model](https://youtu.be/cg0KNJZqInY)
 
 # Setup
 
