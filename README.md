@@ -4,7 +4,10 @@ Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
 
 ## Related [YouTube](http://youtube.com/CoderVlogger "CoderVlogger's YouTube channel") videos
 
+Please check out the following videos to learn more about DevHub:
+
 1. [Introduction & Custom User Model](https://youtu.be/cg0KNJZqInY)
+2. [Setup URLs, templates and HTML views for Account application](https://youtu.be/yNlRzTfZi8Q)
 
 # Setup
 
