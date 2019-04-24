@@ -20,6 +20,13 @@ Please check out the following videos to learn more about DevHub:
 5. Activate the virtualenv: `source ./venv/bin/activate`
 6. Install dependencies: `pip install -r requirements.txt`
 
+## Using `Docker`
+
+1. Make sure you have Docker installed
+2. Clone this repository: `git clone https://github.com/CoderVlogger/devhub.git`
+3. Move into the project folder: `cd devhub`
+4. Build the Image using Dockerfile: `docker build -t [Image-Name] .`
+5. Run a container: `docker run -p 8000:8000 -it --rm --name [Container-Name] [Image-Name]`
 
 # Project Structure
 
