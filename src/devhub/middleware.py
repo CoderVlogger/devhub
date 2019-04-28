@@ -1,8 +1,10 @@
 import json
 from urllib.parse import urlparse
+
 from django.conf import settings
-from django.http import HttpResponsePermanentRedirect
 from django.contrib.auth.models import User
+from django.http import HttpResponsePermanentRedirect
+
 from devhub import models
 
 
@@ -32,7 +34,8 @@ class RequestMiddleware(object):
         if request.path.endswith('/favicon.ico'):
             return response
 
-        if type(response) == HttpResponsePermanentRedirect and settings.APPEND_SLASH:
+        if isinstance(
+                response, HttpResponsePermanentRedirect) and settings.APPEND_SLASH:
             new_location = response.get('location', None)
             content_length = response.get('content-length', None)
 
@@ -41,7 +44,11 @@ class RequestMiddleware(object):
 
                 old = (('http', 'https')[request.is_secure()], request.get_host(), '{0}/'.format(request.path),
                        request.META['QUERY_STRING'])
-                new = (new_parsed.scheme, new_parsed.netloc, new_parsed.path, new_parsed.query)
+                new = (
+                    new_parsed.scheme,
+                    new_parsed.netloc,
+                    new_parsed.path,
+                    new_parsed.query)
 
                 if old == new:
                     # dont log - it's just adding a /
@@ -55,7 +62,7 @@ class RequestMiddleware(object):
 
     def save(self, request, response):
         if hasattr(request, 'user'):
-            user = request.user if type(request.user) == User else None
+            user = request.user if isinstance(request.user, User) else None
         else:
             user = None
 
@@ -65,7 +72,8 @@ class RequestMiddleware(object):
         remote_addr_fwd = None
 
         if 'HTTP_X_FORWARDED_FOR' in meta:
-            remote_addr_fwd = meta['HTTP_X_FORWARDED_FOR'].split(",")[0].strip()
+            remote_addr_fwd = meta['HTTP_X_FORWARDED_FOR'].split(",")[
+                0].strip()
             if remote_addr_fwd == meta['HTTP_X_FORWARDED_FOR']:
                 meta.pop('HTTP_X_FORWARDED_FOR')
 
