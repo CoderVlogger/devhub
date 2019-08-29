@@ -1,0 +1,20 @@
+language: generic
+
+matrix:
+  include:
+    - env: PROJECT=devhub-be/devhub/
+      language: go
+      go: 1.12.7
+      before_script:
+        - cd devhub-be/devhub
+      script:
+        - go test ./...
+
+    - env: PROJECT=devhub-fe-web/devhub/
+      language: node_js
+      node_js: 12.7.0
+      before_script:
+        - cd devhub-fe-web/devhub
+      script:
+        - npm install
+        - npm test
