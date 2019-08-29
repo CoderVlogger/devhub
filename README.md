@@ -1,3 +1,9 @@
+
+> If you see this it means you are checking the previous version of the project. This version kept for supporting links from YouTube.
+
+> Please consider checking the latest version: monorepo which includes back-end in Golang, API in Python/Django (planned) and front-ends in React/React Native/Expo. Probably it is still in progress with much more awesome features: https://github.com/CoderVlogger/devhub
+
+
 # DevHub
 
 Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
