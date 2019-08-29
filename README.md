@@ -1,49 +1,23 @@
-
-> If you see this it means you are checking the previous version of the project. This version kept for supporting links from YouTube.
-
-> Please consider checking the latest version: monorepo which includes back-end in Golang, API in Python/Django (planned) and front-ends in React/React Native/Expo. Probably it is still in progress with much more awesome features: https://github.com/CoderVlogger/devhub
-
-
 # DevHub
 
-Hub for DEVelopment related stuff: news, articles, source codes, ideas, etc.
+[![Build Status](https://travis-ci.org/CoderVlogger/devhub.svg?branch=master)](https://travis-ci.org/CoderVlogger/devhub)
 
-## Related [YouTube](http://youtube.com/CoderVlogger "CoderVlogger's YouTube channel") videos
+> Goal: using automated tools (robots) gather most recent and most valuable technical articles and posts from popular websites, engineering blogs, etc.
 
-Please check out the following videos to learn more about DevHub:
+This repositoroy is a monorepo which includes:
 
-1. [Introduction & Custom User Model](https://youtu.be/cg0KNJZqInY)
-2. [Setup URLs, templates and HTML views for Account application](https://youtu.be/yNlRzTfZi8Q)
+- devhub-be/devhub - back-end, Golang project
+- devhub-fe-web - front-end web, React project
+- devhub-fe-mobile - front-end mobile, React Native/Expo project
 
-# Setup
+## Structure
 
-## Using `virtualenv`
-
-1. Make sure you have [Python 3] and [virtualenv] installed
-2. Clone this repository: `git clone https://github.com/CoderVlogger/devhub.git`
-3. Move into the project folder: `cd devhub`
-4. Create a new virtualenv: `virtualenv venv -p python3`
-5. Activate the virtualenv: `source ./venv/bin/activate`
-6. Install dependencies: `pip install -r requirements.txt`
-
-
-# Project Structure
-
-## Repository structure
-
-1. `src` - source code
-2. `docs` - auto generated Sphinx documentation (to be added)
-3. `tests` - high level tests (e2e, load, etc. - to be added)
-
-## Django applications
-
-1. Account
-   1. User side register, login and logout
-   2. Profile and account settings
-2. Board (to be added)
-   1. Share public posts
-   2. Post rating system
-   3. Post comments
-
-[Python 3]: https://www.python.org/downloads/
-[virtualenv]: https://virtualenv.pypa.io/en/stable/
+```
+devhub:                 # git root directory
+    devhub-be             # container for back-end
+        devhub              # go project
+    devhub-fe-web         # container for front-end web
+        devhub              # react project
+    devhub-fe-mobile      # container for front-end mobile
+        devhub              # expo/react native project
+```
