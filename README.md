@@ -10,6 +10,8 @@ This repositoroy is a monorepo which includes:
 - devhub-fe-web - front-end web, React project
 - devhub-fe-mobile - front-end mobile, React Native/Expo project
 
+Check out the [Wiki](https://github.com/CoderVlogger/devhub/wiki/Backlog-for-Version-1) for version 1 details.
+
 ## Repository Structure
 
 ```
