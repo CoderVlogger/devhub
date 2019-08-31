@@ -10,14 +10,14 @@ This repositoroy is a monorepo which includes:
 - devhub-fe-web - front-end web, React project
 - devhub-fe-mobile - front-end mobile, React Native/Expo project
 
-## Structure
+## Repository Structure
 
 ```
 devhub:                 # git root directory
-    devhub-be             # container for back-end
-        devhub              # go project
-    devhub-fe-web         # container for front-end web
-        devhub              # react project
-    devhub-fe-mobile      # container for front-end mobile
-        devhub              # expo/react native project
+|-devhub-be             # container for back-end
+  |-devhub              # go project
+|-devhub-fe-web         # container for front-end web
+  |-devhub              # react project
+|-devhub-fe-mobile      # container for front-end mobile
+  |-devhub              # expo/react native project
 ```
