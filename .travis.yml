@@ -5,8 +5,12 @@ matrix:
     - env: PROJECT=devhub-be/devhub/
       language: go
       go: 1.12.7
+      install:
+        - pwd
+        - cp devhub-be/devhub $GOPATH/ --recursive
       before_script:
-        - cd devhub-be/devhub
+        - cd $GOPATH/devhub
+        - go vet ./...
       script:
         - go test ./...
 

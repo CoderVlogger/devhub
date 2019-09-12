@@ -1,0 +1,10 @@
+[
+    {
+        "source_url": "https://hacks.mozilla.org",
+        "article_regexp": "^https:\/{2}hacks\\.mozilla\\.org\/\\d{4}\/\\d{2}\/[a-zA-z0-9-]+\/$"
+    },
+    {
+        "source_url": "https://github.blog",
+        "article_regexp": "^https:\/{2}github\\.blog\/\\d{4}-\\d{2}-\\d{2}-[a-zA-z0-9-]+\/$"
+    }
+]
