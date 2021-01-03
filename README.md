@@ -1,3 +1,5 @@
+Note: Outdated public clone of CodeKN/CodeKN. The current version of CodeKN is not publicly available yet.
+
 # DevHub
 
 [![Build Status](https://travis-ci.org/CoderVlogger/devhub.svg?branch=master)](https://travis-ci.org/CoderVlogger/devhub)
